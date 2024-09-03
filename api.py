@@ -8,6 +8,8 @@ from suno.models import RequestParams, CreditsInfo, Clip, ModelVersions
 import fastapi
 from fastapi.responses import RedirectResponse, JSONResponse
 from suno import __version__
+from dotenv import load_dotenv
+
 
 COOKIE = os.getenv("SUNO_COOKIE")
 

@@ -8,6 +8,9 @@ import time
 import logging
 from typing import List, Optional
 import requests
+from dotenv import load_dotenv
+import os
+
 
 from .models import ModelVersions, Clip, CreditsInfo
 from .utils import create_clip_from_data, response_to_clips, generate_fake_useragent
